@@ -11,10 +11,6 @@ export type Scalars = {
   Float: number;
 };
 
-export type Mutation = {
-  __typename?: 'Mutation';
-};
-
 export type Post = {
   __typename?: 'Post';
   rating?: Maybe<Scalars['Int']>;
