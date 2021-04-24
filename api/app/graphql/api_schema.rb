@@ -1,5 +1,5 @@
 class ApiSchema < GraphQL::Schema
-  mutation(Types::MutationType)
+  # mutation(Types::MutationType)
   query(Types::QueryType)
 
   # Union and Interface Resolution
