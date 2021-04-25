@@ -2,7 +2,7 @@ import React from 'react';
 import gql from 'graphql-tag';
 import {useGetPostsQuery} from "../../generated/graphql";
 
-const GET_POSTS = gql`
+gql`
 query GetPosts {
   posts {
     title
@@ -11,10 +11,10 @@ query GetPosts {
 `
 
 const Widget = () => {
-    const {data, loading, error} = useGetPostsQuery()
+    const {data} = useGetPostsQuery()
     return (
         <div>
-            Hello World
+            Hello World {data?.posts?.title}
         </div>
     );
 };
